@@ -1,0 +1,50 @@
+name: JSimulator-Deployment
+
+on:
+  push:
+    branches:
+      - main
+      - development
+
+jobs:
+  Staging-deployment:
+    name: Staging Deployment
+    if: github.ref == 'refs/heads/development'
+    runs-on: ubuntu-latest
+    environment:
+      name: Development
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Dart
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: '3.5.4'
+
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.5' # Ensure this version exists
+
+      - name: Get dependencies
+        run: flutter pub get
+
+#      - name: Upgrade dependencies
+#        run: flutter pub upgrade --major-versions
+
+      - name: Clean and build the project
+        run: |
+          flutter clean
+          flutter build web --release
+
+      - name: Deploy build files via SSH
+        uses: easingthemes/ssh-deploy@v2.1.4
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.STAGING_DEPLOY_KEY }}
+          REMOTE_HOST: ${{ secrets.STAGING_DEPLOY_HOST }}
+          REMOTE_USER: ${{ secrets.STAGING_DEPLOY_USERNAME }}
+          REMOTE_PORT: ${{ secrets.STAGING_DEPLOY_PORT }}
+          SOURCE: "./build/web"
+          TARGET: ${{ secrets.STAGING_DEPLOY_TARGET }}

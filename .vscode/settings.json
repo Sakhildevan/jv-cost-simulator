@@ -1,0 +1,14 @@
+{
+    "editor.formatOnSave": true,
+    "dart.previewFlutterUiGuides": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    "cSpell.words": [
+        "Curr",
+        "deliverycountries",
+        "Optimised"
+    ]
+}

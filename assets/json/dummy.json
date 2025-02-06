@@ -1,0 +1,99 @@
+{
+    "column1": {
+        "mainHead": "ITEM DETAILS & VOLUME",
+        "subhead1": "Alginate Products",
+        "subhead2": "Mid Italian",
+        "subhead3": "Calculated Shelf Price",
+        "subhead4": ""
+    },
+    "column2": {
+        "mainHead": "USD BASIS",
+        "subhead1": "Volume Level",
+        "subhead2": "Package Level",
+        "subhead3": "Case Level",
+        "subhead4": "Link Level"
+    },
+    "column3": {
+        "mainHead": "ITEM DETAILS & VOLUME",
+        "subhead1": "Volume Level",
+        "subhead2": "Package Level",
+        "subhead3": "Case Level",
+        "subhead4": "Link Level"
+    },
+    "retailTaxMargin": {
+        "title": "Retail Tax & margins",
+        "data": [
+            {
+                "component": "Tax included in Shelf Price",
+                "volUsd": "0.00",
+                "packUsd": "0.00",
+                "caseUsd": "0.00",
+                "linkUsd": "0.00",
+                "volCad": "0.00",
+                "packCad": "2.58",
+                "caseCad": "0.00",
+                "linkCad": "0.00"
+            },
+            {
+                "component": "Retail Margin on Sales",
+                "volUsd": "0.00",
+                "packUsd": "0.00",
+                "caseUsd": "0.00",
+                "linkUsd": "0.00",
+                "volCad": "0.00",
+                "packCad": "0.00",
+                "caseCad": "0.00",
+                "linkCad": "0.00"
+            },
+            {
+                "component": "Price to Retailer",
+                "volUsd": "0.00",
+                "packUsd": "0.00",
+                "caseUsd": "0.00",
+                "linkUsd": "0.00",
+                "volCad": "0.00",
+                "packCad": "0.00",
+                "caseCad": "0.00",
+                "linkCad": "0.00"
+            }
+        ]
+    },
+    "distributorMargin": {
+        "title": "Distributor Margins & Import",
+        "data": [
+            {
+                "component": "Est Distributor Margin on Sales",
+                "volUsd": "0.00",
+                "packUsd": "0.00",
+                "caseUsd": "0.00",
+                "linkUsd": "0.00",
+                "volCad": "0.00",
+                "packCad": "2.58",
+                "caseCad": "0.00",
+                "linkCad": "0.00"
+            },
+            {
+                "component": "Import Fees",
+                "volUsd": "0.00",
+                "packUsd": "0.00",
+                "caseUsd": "0.00",
+                "linkUsd": "0.00",
+                "volCad": "0.00",
+                "packCad": "0.00",
+                "caseCad": "0.00",
+                "linkCad": "0.00"
+            },
+            {
+                "component": "Distributor Price form JVL",
+                "volUsd": "0.00",
+                "packUsd": "0.00",
+                "caseUsd": "0.00",
+                "linkUsd": "0.00",
+                "volCad": "0.00",
+                "packCad": "0.00",
+                "caseCad": "0.00",
+                "linkCad": "0.00"
+            }
+        ]
+    }
+}
